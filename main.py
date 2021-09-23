@@ -10,9 +10,14 @@ class ServiceRunner(dl.BaseServiceRunner):
     """
 
     def __init__(self):
-        print("init")
+        print('This print is from the init of the service.')
 
     def run(self, item):
-        for i in range(10):
-            print(i)
-        print(item.name)
+        """
+        This is the main function for this FaaS
+
+        :param item: dl.Item
+        :return:
+        """
+        print('This is a print from an execution that runs on the item: {}'.format(item.name))
+        logger.warning('We can also use logger for different debug levels')
