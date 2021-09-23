@@ -2,7 +2,7 @@
 
 this support in dtlpy>=1.35.13
 
-1. create a public package in dataloop's github  
+1. create a public package in github  
    Simple example for it is this repo  
    main.py - for the running code  
    create_package.py for create the FaaS
