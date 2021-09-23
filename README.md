@@ -33,5 +33,5 @@ And can see the execution flow and status in our UI Go to Applications prease in
 You will see all the executions and its status and error if it failed
 
 3. update git and show the service is also updated  
-   If want to change the code, change it and push your changes to the git repo after go th sdk and update the package
-   and service
+   If want to change the code, change it and push your changes to the git repo after go th sdk and update the service using    
+   `service.update()`
