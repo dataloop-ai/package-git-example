@@ -1,6 +1,5 @@
 import dtlpy as dl
 
-dl.setenv('prod')
 project_name = "insert your project name"
 package_name = "package-git"  # this will be the name of the created package
 git_repo_url = 'https://github.com/dataloop-ai/package_git_example.git'
@@ -31,8 +30,3 @@ service = package.services.deploy(package=package,
                                                                    max_replicas=1,
                                                                    queue_length=10))
                                   )
-
-# # to update the service
-# service = package.services.get(service_name=package.name)
-# service.package_revision = package.version
-# service.update()

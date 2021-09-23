@@ -19,6 +19,5 @@ class ServiceRunner(dl.BaseServiceRunner):
         :param item: dl.Item
         :return:
         """
-        raise ValueError('rasie')
         print('This is a print from an execution that runs on the item: {}'.format(item.name))
         logger.warning('We can also use logger for different debug levels')
